@@ -7,3 +7,4 @@ d = {"employees":[{"firstName": "John", "lastName": "Doe"},
           {"firstName": "Jessy", "lastName": "Petter" }]}
 
 print(d["employees"][1]["lastName"])
+
