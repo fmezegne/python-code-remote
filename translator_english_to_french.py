@@ -10,8 +10,9 @@ french_to_english ={"PRUNE" : "safou",
 "AFRIQUE": "Africa"
 }
 
-user = input("ENTER A WORF OF YOUR CHOICE IN CAPITAL LETTER\n")
-translation = french_to_english.get (user)
+user = input("ENTER A WORF OF YOUR CHOICE IN FRENCH\n")
+user = user.upper()             #this will convert what ever user input to uppercase so that it can match my keys in the dictionary.
+translation = french_to_english.get(user)
 
 if user in french_to_english:
     print(translation)
