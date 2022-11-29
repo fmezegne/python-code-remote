@@ -1,7 +1,9 @@
 # write a code that will automatically translate an input from a user to ENGLISH.
 # And if that input from user does not exixt in your ditionary, 
 # simply return "input" does not exixt in the dictionary.
-french_to_english ={"PRUNE" : "safou",
+
+# define your dictionary 
+french_to_english ={"PRUNE" : "safou",            
 "EST": "is",
 "UN": "a",
 "FRUIT": "fruit",
@@ -10,7 +12,7 @@ french_to_english ={"PRUNE" : "safou",
 "AFRIQUE": "Africa"
 }
 
-user = input("ENTER A WORF OF YOUR CHOICE IN FRENCH\n")
+user = input("ENTER A WORD OF YOUR CHOICE IN FRENCH\n")
 user = user.upper()             #this will convert what ever user input to uppercase so that it can match my keys in the dictionary.
 translation = french_to_english.get(user)
 
